@@ -16,8 +16,8 @@ class BankAccount {
     void setBalance(double balance);
     class Transaction {
       public:
-      double deposit(BankAccount& account, double amount);
-      // double withdraw(BankAccount& account, double);
+      double deposit(BankAccount& account, double amount);  
+      double withdraw(BankAccount& account, double amount);
 
     };
 
