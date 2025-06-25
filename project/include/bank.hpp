@@ -6,7 +6,10 @@ class Bank {
    std::vector<BankAccount> multiAcc;
 
   public:
-   Bank();
-   void createAccount(const BankAccount& account);
+   
+   void createAccount(const std::string& accountNumber, double initialBalance);
+   BankAccount* findAccount(const std::string& accountNumber);
+   int transferMoney(const std::string& fromAccount, const std::string& toAccount, double amount);
+
 
 };

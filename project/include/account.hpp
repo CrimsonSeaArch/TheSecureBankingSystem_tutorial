@@ -1,5 +1,6 @@
 #include <string>
 #include <iostream>
+#include "bank.hpp"
 
 using namespace std;
 

@@ -1,6 +1,7 @@
 #include <iostream>
 #include "bank.hpp"
 
+
 using namespace std;
 
 int main() {
@@ -18,4 +19,16 @@ int main() {
   std::cout << "KontoStand: " << Stephan.getBalance() << "\n";
   
   // return 0;
+
+  Bank Step;
+  Step.createAccount("1001", 5000);
+  BankAccount* acc = Step.findAccount("1001");
+
+  if (acc) {
+    cout << "Balance: €" << acc->getBalance() << "\n";
+  } else {
+    cout << "account  not found.\n";
+  }
+
+
 }
